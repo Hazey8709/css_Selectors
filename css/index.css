@@ -1,0 +1,278 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/*T (M)     Active & Special Elements  (All-Cards - Reusable)  */
+/*s (M)   Special Elements     */
+#active {
+    border: 0.1rem solid black;
+    background-color: aquamarine;
+}
+
+.class {
+    border: 0.1rem solid black;
+    background-color: aquamarine;
+}
+
+.lightBlue {
+    border: 0.1rem solid black;
+    background-color: lightblue;
+}
+
+.lightGreen {
+    border: 0.1rem solid black;
+    background-color: lightgreen;
+}
+
+.yellow {
+    border: 0.1rem solid black;
+    background-color: yellow;
+}
+
+/*s (M)    To Show Difference of Universal Operator   */
+.withOut {
+    border: 0.1rem solid black;
+    border-radius: 0.3rem;
+    background-color: aquamarine;
+    /* color: black; */
+    margin-left: 1.5rem;
+    text-align: left;
+}
+
+.with {
+    border: 0.1rem solid black;
+    border-radius: 0.3rem;
+    background-color: aquamarine;
+    margin-left: 1.5rem;
+    text-align: left;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+/*s (M)    Normal LI Element    */
+.li {
+    border: 0.1rem solid rgba(0, 0, 0, 0.521);
+    border-radius: 0.3rem;
+    background-color: white;
+    color: black;
+    width: 18rem;
+    margin-left: 1.5rem;
+}
+
+/*s (M)    Attribute & Starting Value Selector  */
+#startingValue p {
+    border: 0.1rem solid #0005;
+    height: 10rem;
+    padding: 0.2rem;
+}
+
+/*s (M)   Pseudo-Class  (code visual Cont)  */
+#PseudoClass pre > p {
+    border: 0.1rem solid #0005;
+    height: 17rem;
+    padding: 0.2rem;
+}
+
+/*s (M)    Disabled Input Element  */
+#disabled pre > p {
+    border: 0.1rem solid #0005;
+    height: 10rem;
+    padding: 0.2rem;
+}
+
+#nthChild pre > p {
+    border: 0.1rem solid #0005;
+    height: 12rem;
+    padding: 0.2rem;
+}
+
+/*s (M)   Only-Child Selector  Div #1 */
+#div1 {
+    border: 0.1rem solid #0005;
+    height: 7rem;
+    padding: 0.3rem;
+}
+
+/*s (M)   Only-Child Selector  Div #2 */
+#div2 {
+    border: 0.1rem solid #0005;
+    height: 3rem;
+    padding: 0.3rem;
+}
+
+/** (M)    Navigation    */
+.nav_Cont {
+    /* display: inline-block; */
+    /* flex-direction: row; */
+    position: fixed;
+    border: 0.1rem solid black;
+    background-color: rgba(0, 0, 0, 0.619);
+    width: 100%;
+    height: 6rem;
+    z-index: 1;
+}
+
+.nav_Cont ul {
+    display: flex;
+    /* position: fixed; */
+    border: 0.1rem solid yellow;
+    /* min-width: 20rem; */
+    /* max-width: 25rem; */
+    width: 21rem;
+    height: 5rem;
+
+    margin: 0 auto;
+    /* margin-left: .5rem; */
+    /* margin-top: 1rem; */
+    /* flex-wrap: nowrap; */
+    overflow-x: auto;
+}
+
+.nav_Cont li {
+    list-style-type: none;
+    /* overflow-x: scroll; */
+}
+
+.nav_Cont a {
+    display: block;
+    border: 0.1rem solid white;
+    border-radius: 0.3rem;
+    background-color: black;
+    color: white;
+    width: 5.5rem;
+    /* word-wrap: normal; */
+    margin-top: 1rem;
+    margin-right: 1rem;
+    text-align: center;
+    text-decoration: none;
+    padding: 0.1rem;
+    font-size: 18px;
+}
+
+/*t (M)       Main  Container      */
+#Main_Cont {
+    position: absolute;
+    border: 0.1rem solid red;
+    margin-top: 6rem;
+    /* z-index: 2; */
+}
+
+/** (M)    Introduction Section  */
+.intro_Cont {
+    /* border: 0.1rem solid blue; */
+    margin-top: 1rem;
+}
+
+/*s (M)  Title    */
+.intro_Cont h1 {
+    text-align: center;
+    font-family: cursive;
+    font-size: 36px;
+}
+
+/*s (M)  Sub Title  */
+.intro_Cont h4 {
+    margin-top: 3rem;
+    text-align: center;
+    font-size: 14px;
+}
+
+.intro_Cont p:first-of-type {
+    text-indent: 50px;
+    margin-top: 1.5rem;
+    padding: 0.5rem;
+}
+
+.intro_Cont p {
+    margin-top: 1.5rem;
+    padding: 0.5rem;
+}
+
+/* * (M)     All Cards        */
+.card_Cont {
+    border: 0.1rem solid black;
+    background-color: rgba(0, 0, 0, 0.115);
+    /* width: 95%; */
+    margin: 0 auto;
+    margin-top: 3rem;
+    padding: 0.5rem;
+}
+
+/*s (M)  Card Title  */
+.card_Cont h2 {
+    border: 0.1rem solid #0005;
+    border-radius: 0.3rem;
+    background-color: black;
+    color: white;
+    width: 15rem;
+    margin: 0 auto;
+    text-align: center;
+}
+
+/*s (M)   Code Example Container  */
+.card_Cont pre > p {
+    border: 0.1rem solid #0005;
+    border-radius: 0.3rem;
+    background-color: white;
+    width: 20rem;
+    height: 5rem;
+    margin: 0 auto;
+    margin-top: 1rem;
+    font-weight: bold;
+    padding: 0.2rem;
+}
+
+/** (M)   Visual Example Container  */
+.visual_Cont {
+    border: 0.1rem solid #0005;
+    border-radius: 0.3rem;
+    background-color: #0005;
+    margin-top: 1rem;
+    padding: 0.3rem;
+    /* margin-bottom: 1rem; */
+    text-align: center;
+    color: red;
+}
+
+/** (M)   Visual Container  H3, Div */
+.visual_Cont h3,
+div,
+input {
+    border: 0.1rem solid rgba(0, 0, 0, 0.521);
+    border-radius: 0.3rem;
+    background-color: white;
+    color: black;
+    font-weight: bold;
+    width: 20rem;
+    height: 2rem;
+    margin: 0 auto;
+    margin-top: 1rem;
+    text-align: center;
+}
+
+.visual_Cont ul {
+    border: 0.1rem solid rgba(0, 0, 0, 0.521);
+    border-radius: 0.3rem;
+    background-color: white;
+    color: black;
+    font-weight: bold;
+    width: 20rem;
+    height: 4rem;
+    margin: 0 auto;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+.visual_Cont p {
+    border: 0.1rem solid rgba(0, 0, 0, 0.521);
+    border-radius: 0.3rem;
+    background-color: antiquewhite;
+    color: black;
+    margin-top: 1rem;
+    padding: 0.3rem;
+}
+
+/*st   Testing ONLY  */

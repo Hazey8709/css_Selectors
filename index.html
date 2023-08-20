@@ -1,0 +1,817 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+        <link rel="stylesheet" type="text/css" href="./css/index.css" />
+
+        <title>CSS Selectors</title>
+    </head>
+    <body>
+        <nav class="nav_Cont">
+            <ul>
+                <li><a href="#top">Top</a></li>
+                <li><a href="#all">*</a></li>
+                <li><a href="#element">Element Sel</a></li>
+                <li><a href="#class">Class Sel</a></li>
+                <li><a href="#id">Id Sel</a></li>
+                <li><a href="#multi">Multi Sel</a></li>
+                <li><a href="#comma">Comma Sel</a></li>
+                <li><a href="#descendant">Descendant Sel</a></li>
+                <li><a href="#adjacent">Adjacent Sel</a></li>
+                <li><a href="#child">Child Sel</a></li>
+                <li><a href="#sibling">Sibling Sel</a></li>
+                <li><a href="">Attribute Sel</a></li>
+                <li><a href="">Attr = Val</a></li>
+                <li><a href="">Attr ~= Val</a></li>
+                <li><a href="">Attr *= Val</a></li>
+                <li><a href="">Attr ⌃= Val</a></li>
+                <li><a href="">Attr $= Val</a></li>
+                <li><a href="">Pseudo Class</a></li>
+                <li><a href="">Focus</a></li>
+                <li><a href="">Checked</a></li>
+                <li><a href="">Disabled</a></li>
+                <li><a href="">Enabled</a></li>
+                <li><a href="">Valid</a></li>
+                <li><a href="">Invalid</a></li>
+                <li><a href="">Required</a></li>
+                <li><a href="">Optional</a></li>
+                <li><a href="">First-Child</a></li>
+                <li><a href="">Last-Child</a></li>
+                <li><a href="">Nth-Child</a></li>
+                <li><a href="">Nth-Last-Child</a></li>
+                <li><a href="">Only-Child</a></li>
+                <li><a href="">First-Of-Type</a></li>
+                <li><a href="">Last-Of-Type</a></li>
+                <li><a href="">Nth-Of-Type</a></li>
+                <li><a href="">Nth-Last-Of-Type</a></li>
+                <li><a href="">Only-Of-Type</a></li>
+                <li><a href="">Target</a></li>
+                <li><a href="">Not()</a></li>
+                <li><a href="">Has()</a></li>
+                <li><a href="">Before()</a></li>
+                <li><a href="">After()</a></li>
+                <li><a href="">First-Letter</a></li>
+                <li><a href="">First-Line</a></li>
+                <li><a href="">Placeholder</a></li>
+                <li><a href="">Selection</a></li>
+                <li><a href="">Marker</a></li>
+                <li><a href="">Bottom</a></li>
+                <!-- <li><a href="">1</a></li>
+                <li><a href="">1</a></li>
+                <li><a href="">1</a></li>
+                <li><a href="">1</a></li> -->
+            </ul>
+        </nav>
+
+        <main id="Main_Cont">
+            <section id="top" class="intro_Cont">
+                <h1>CSS Selectors</h1>
+
+                <h4>
+                    Unveiling the Power of CSS Selectors: Navigating the Web
+                    Design Landscape
+                </h4>
+
+                <p>
+                    In the intricate realm of web development, where aesthetics
+                    and functionality converge, CSS (Cascading Style Sheets)
+                    serves as a crucial tool for crafting captivating and
+                    user-friendly interfaces. At the heart of this styling
+                    language lies a versatile feature known as "selectors" – the
+                    architects behind the virtual brushstrokes that paint the
+                    digital canvas. CSS selectors are the key to precisely
+                    targeting HTML elements, enabling developers to apply styles
+                    and bring their creative visions to life. From the
+                    foundational simplicity of tag selectors to the intricate
+                    specificity of attribute and pseudo-class selectors, this
+                    journey will delve into the diverse world of CSS selectors,
+                    offering insights into their classifications, applications,
+                    and their pivotal role in shaping the visual web experience.
+                    Whether you're a beginner taking your first steps into the
+                    world of web design or an experienced developer seeking to
+                    refine your skills, the exploration of CSS selectors
+                    promises to be an illuminating expedition into the art and
+                    science of designing for the digital realm.
+                </p>
+                <p>
+                    Pseudo-Classes start with a colon character (:).
+                    Pseudo-Elements start with two colons (::).
+                </p>
+            </section>
+
+            <!--!  Universal Sel -->
+            <section id="all" class="card_Cont">
+                <h2>* Universal Selector</h2>
+                <pre><p>
+            *  {
+                Margin: 0;
+                Padding: 0;
+            }
+            </p></pre>
+                <section class="visual_Cont">
+                    With Out * Selector
+                    <h3>H3</h3>
+                    <div>Div</div>
+                    <div>Div</div>
+                    <ul>
+                        UL
+                        <li class="withOut">List Item</li>
+                    </ul>
+                </section>
+                <section class="visual_Cont">
+                    With * Selector
+                    <h3>H3</h3>
+                    <div>Div</div>
+                    <div>Div</div>
+                    <ul>
+                        UL
+                        <li class="with">List Item</li>
+                    </ul>
+                    <p>
+                        The CSS universal selector <b> *</b> matches elements of
+                        any type. The universal selector is a special type
+                        selector and can therefore be namespaced when using
+                        @namespace. This is useful when dealing with documents
+                        containing multiple namespaces such as HTML with inline
+                        SVG or MathML, or XML that mixes multiple
+                        vocabularies.<br />
+                        <b
+                            >ns | * _ matches all elements in namespace ns,<br />
+                            * | * _ matches all elements, <br />
+                            | * _ matches all elements without any declared
+                            namespace</b
+                        >
+                    </p>
+                </section>
+            </section>
+
+            <!--!  Element Sel -->
+            <section id="element" class="card_Cont">
+                <h2>Element Selector</h2>
+                <pre><p>
+        div  {
+            background-color: aquamarine;
+        }
+                </p></pre>
+                <section class="visual_Cont">
+                    <h3>H3</h3>
+                    <div id="active">Div</div>
+                    <div id="active">Div</div>
+                    <ul>
+                        UL
+                        <li class="li">List Item</li>
+                    </ul>
+                    <p>
+                        The element selector selects elements by HTML tag name.
+                        Example: body, nav, header tags, p, div, or semantics:
+                        section, aside, quote and so on.
+                    </p>
+                </section>
+            </section>
+
+            <!--!  Class Sel -->
+            <section id="class" class="card_Cont">
+                <h2>Class Selector</h2>
+                <pre><p>
+        .class  {
+            background-color: aquamarine;
+        }
+                </p></pre>
+                <section class="visual_Cont">
+                    <h3 id="active">.class</h3>
+                    <div>Div</div>
+                    <div>Div</div>
+                    <ul>
+                        UL
+                        <li class="li">List Item</li>
+                    </ul>
+                    <p>
+                        The class selector, selects elements with a specific
+                        class attribute. Select all elements with the specified
+                        class name.
+                    </p>
+                </section>
+            </section>
+
+            <!--!  ID Sel -->
+            <section id="id" class="card_Cont">
+                <h2>ID Selector</h2>
+                <pre><p>
+        #id  {
+            background-color: aquamarine;
+        }
+                </p></pre>
+                <section class="visual_Cont">
+                    <h3 id="active">#id</h3>
+                    <div>Div</div>
+                    <div>Div</div>
+                    <ul>
+                        UL
+                        <li class="li">List Item</li>
+                    </ul>
+                    <p>
+                        The CSS ID selector matches an element based on the
+                        value of the element's id attribute. In order for the
+                        element to be selected, its id attribute must match
+                        exactly the value given in the selector.
+                    </p>
+                </section>
+            </section>
+
+            <!--!  Multi Sel -->
+            <section id="multi" class="card_Cont">
+                <h2>Multiple Selectors</h2>
+                <pre><p>
+        #active .class  {
+            background-color: aquamarine;
+        }
+                </p></pre>
+                <section class="visual_Cont">
+                    <h3 id="active">#id</h3>
+                    <div class="class">.class</div>
+                    <div>Div</div>
+                    <ul>
+                        UL
+                        <li class="li">List Item</li>
+                    </ul>
+                    <p>
+                        Chain two or more classes or Id's to select an element
+                        that have the specified class name or Id.
+                    </p>
+                </section>
+            </section>
+
+            <!--!  Comma Combinator -->
+            <section id="comma" class="card_Cont">
+                <h2>Comma Combinator</h2>
+                <pre><p>
+        .class-1, .class-2  {
+            background-color: aquamarine;
+        }
+                </p></pre>
+                <section class="visual_Cont">
+                    <h3 id="active">.class-1</h3>
+                    <div>Div</div>
+                    <div id="active">.class-2</div>
+                    <ul>
+                        UL
+                        <li class="li">List Item</li>
+                    </ul>
+                    <p>
+                        You can write multiple selectors separated by commas, to
+                        apply the same rule to multiple sets of selected
+                        elements at once.
+                    </p>
+                </section>
+            </section>
+
+            <!--!  Descendant Selector  -->
+            <section id="descendant" class="card_Cont">
+                <h2>Descendant Selector</h2>
+                <pre><p>
+        ul li  {
+            background-color: aquamarine;
+        }
+                </p></pre>
+                <section class="visual_Cont">
+                    <h3>H3</h3>
+                    <div>Div</div>
+                    <div>Div</div>
+                    <ul>
+                        UL
+                        <li id="active" class="li">List Item</li>
+                    </ul>
+                    <p>
+                        The descendant combinator — typically represented by a
+                        single space <b> (" ")</b> character — combines two
+                        selectors such that elements matched by the second
+                        selector are selected if they have an ancestor (parent,
+                        parent's parent, parent's parent's parent, etc.) element
+                        matching the first selector. Selectors that utilize a
+                        descendant combinator are called descendant selectors.
+                    </p>
+                </section>
+            </section>
+
+            <!--!  Adjacent Selector  -->
+            <section id="adjacent" class="card_Cont">
+                <h2>Adjacent Selector</h2>
+                <pre><p>
+        .item-1 + div  {
+            background-color: aquamarine;
+        }
+                </p></pre>
+                <section class="visual_Cont">
+                    <h3>.item-1</h3>
+                    <div id="active">Div</div>
+                    <div>Div</div>
+                    <ul>
+                        UL
+                        <li class="li">List Item</li>
+                    </ul>
+                    <p>
+                        The adjacent sibling combinator <b> + </b> separates two
+                        selectors and matches the second element only if it
+                        immediately follows the first element, and both are
+                        children of the same parent element.
+                    </p>
+                </section>
+            </section>
+
+            <!--!  Child Selector  -->
+            <section id="child" class="card_Cont">
+                <h2>Child Selector</h2>
+                <pre><p>
+        ul > li  {
+            background-color: aquamarine;
+        }
+                </p></pre>
+                <section class="visual_Cont">
+                    <h3>H3</h3>
+                    <div>Div</div>
+                    <div>Div</div>
+                    <ul>
+                        UL
+                        <li id="active" class="li">List Item</li>
+                        <li id="active" class="li">List Item</li>
+                    </ul>
+                    <p>
+                        The child combinator uses a <b> > </b> sign to select
+                        element(s) that are direct children to the first
+                        element. Elements matched by the second selector must be
+                        the immediate children of the elements matched by the
+                        first selector.
+                    </p>
+                </section>
+            </section>
+
+            <!--!  General Sibling Selector  -->
+            <section id="sibling" class="card_Cont">
+                <h2>General Sibling Selector</h2>
+                <pre><p>
+        .item-1 ~ div  {
+            background-color: aquamarine;
+        }
+                </p></pre>
+                <section class="visual_Cont">
+                    <h3>.item-1</h3>
+                    <div id="active">Div</div>
+                    <div id="active">Div</div>
+                    <ul>
+                        UL
+                        <li class="li">List Item</li>
+                    </ul>
+                    <p>
+                        The general sibling combinator uses the
+                        <b>tilde</b> sign to select every element that is
+                        preceded by the first element, without having to be a
+                        direct sibling to the first element
+                    </p>
+                </section>
+            </section>
+
+            <!--!   Attribute Selector  -->
+            <section id="attributeSel" class="card_Cont">
+                <h2>Attribute Selector</h2>
+                <pre><p>
+        li[target]  {
+            background-color: aquamarine;
+        }
+                </p></pre>
+                <section class="visual_Cont">
+                    <h3>.item-1</h3>
+                    <div>Div</div>
+                    <div>Div</div>
+                    <ul>
+                        UL
+                        <li id="active" class="li" target="_blank">
+                            List Item [Target]
+                        </li>
+                    </ul>
+                    <p>
+                        The <b>attribute</b> selector is used to select elements
+                        with a specified attribute. The following example
+                        selects all LI elements with a target attribute.
+                    </p>
+                </section>
+            </section>
+
+            <!--!   Attribute & Attribute Value Selector  -->
+            <section id="att&att" class="card_Cont">
+                <h2>Attribute & Attribute Value Selector</h2>
+                <pre><p>
+        [target="_blank"]  {
+            background-color: aquamarine;
+        }
+                </p></pre>
+                <section class="visual_Cont">
+                    <h3>.item-1</h3>
+                    <div id="active">[Target="_blank"]</div>
+                    <div>Div</div>
+                    <ul>
+                        UL
+                        <li id="active" class="li" target="_blank">
+                            List Item [Target="_blank"]
+                        </li>
+                    </ul>
+                    <p>
+                        Select element(s) that have the specified attribute and
+                        attribute value. The following example selects all
+                        elements with <b> [target="_blank"]</b> a target
+                        attribute & attribute value.
+                    </p>
+                </section>
+            </section>
+
+            <!--!   Attribute & one of the Attribute's Values Selector  -->
+            <section id="attributeOne" class="card_Cont">
+                <h2>Attribute & one of the Attribute's Values Selector</h2>
+                <pre><p>
+        [target~="blue"]  {
+            background-color: aquamarine;
+        }
+                </p></pre>
+                <section class="visual_Cont">
+                    <h3>.item-1</h3>
+                    <div id="active">[Target="blue"]</div>
+                    <div id="active">Div [Target="green blue"]</div>
+                    <ul>
+                        UL
+                        <li class="li" target="_blank">
+                            List Item [Target="_blank"]
+                        </li>
+                    </ul>
+                    <p>
+                        The <b>[attribute~="value"]</b> selector is used to
+                        select elements with an attribute value containing a
+                        specified word. The following example selects all
+                        elements with a title attribute that contains a
+                        space-separated list of words, one of which is "blue".
+                    </p>
+                </section>
+            </section>
+
+            <!--!   Attribute & Partial Value Selector  -->
+            <section id="partial" class="card_Cont">
+                <h2>Attribute & Partial Value Selector</h2>
+                <pre><p>
+        [class*="te"]  {
+            background-color: aquamarine;
+        }
+                </p></pre>
+                <section class="visual_Cont">
+                    <h3>.item-1</h3>
+                    <div id="active">[Class="text"]</div>
+                    <div id="active">Div [Class"green blue_test"]</div>
+                    <ul>
+                        UL
+                        <li class="li">List Item [Class="blank"]</li>
+                    </ul>
+                    <p>
+                        The <b>[attribute*="value"]</b> selector is used to
+                        select elements whose attribute value contains a
+                        specified value. The following example selects all
+                        elements with a class attribute value that contains
+                        "te".
+                    </p>
+                </section>
+            </section>
+
+            <!--!   Attribute & Starting Value Selector  -->
+            <section id="startingValue" class="card_Cont">
+                <h2>Attribute & Starting Value Selector</h2>
+                <pre><p>
+        a[href⌃="http"]  {
+            background-color: aquamarine;
+        }
+        a[href⌃="#"]  {
+            background-color: lightblue;
+        }
+        a[href⌃="/"]  {
+            background-color: lightgreen;
+        }
+                </p></pre>
+                <section class="visual_Cont">
+                    <h3>.item-1</h3>
+                    <div id="active">a[href⌃="http"]</div>
+                    <div class="lightBlue">a[href⌃="#"]</div>
+                    <ul>
+                        UL
+                        <li class="lightGreen" class="li">
+                            List Item a[href⌃="/"]
+                        </li>
+                    </ul>
+                    <p>
+                        The <b>[attribute*="value"]</b> selector is used to
+                        select elements whose attribute value contains a
+                        specified value. The following example selects all
+                        elements with a class attribute value that contains
+                        <b>"te"</b>.
+                    </p>
+                </section>
+            </section>
+
+            <!--!   Attribute & Ending Value Selector  -->
+            <section id="endingValue" class="card_Cont">
+                <h2>Attribute & Ending Value Selector</h2>
+                <pre><p>
+        [class$="test"]  {
+            background-color: aquamarine;
+        }
+
+                </p></pre>
+                <section class="visual_Cont">
+                    <h3>.item-1</h3>
+                    <div id="active">[class="first_test"]</div>
+                    <div id="active">[class="test"]</div>
+                    <ul>
+                        UL
+                        <li class="li">List Item [class="second"]</li>
+                    </ul>
+                    <p>
+                        The <b>[attribute$="value"] </b> selector is used to
+                        select elements whose attribute value ends with a
+                        specified value. The following example selects all
+                        elements with a class attribute with a value of
+                        <b>"test"</b> or ends with <b>"test"</b>.
+                    </p>
+                </section>
+            </section>
+
+            <!--! Pseudo-Class, Link Selectors  -->
+            <section id="PseudoClass" class="card_Cont">
+                <h2>Pseudo-Class, Link Selectors</h2>
+                <pre><p>
+        Selector:Pseudo-class  {
+            Property: value;
+        }
+
+        a:link {
+            background-color: aquamarine;
+        }
+        a:visited {
+            background-color: lightgreen;
+        }
+        a:hover {
+            background-color: yellow;
+        }
+        a:active {
+            background-color: lightblue;
+        }
+
+                </p></pre>
+                <section class="visual_Cont">
+                    <h3>H3</h3>
+                    <div class="lightBlue">a:active</div>
+                    <div class="yellow">a:hover</div>
+                    <div class="lightGreen">a:visited</div>
+                    <div class="class">a:link</div>
+                    <ul>
+                        UL
+                        <li class="li">List Item</li>
+                    </ul>
+                    <p>
+                        A Pseudo-Class is used to define a special state of an
+                        element. You can use it to Style an element when a user
+                        mouses over it, Style visited and unvisited links
+                        differently, Style an element when it gets focus. <br />
+                        <b>Note:</b> a:hover MUST come after a:link and
+                        a:visited in the CSS definition in order to be
+                        effective! a:active MUST come after a:hover in the CSS
+                        definition in order to be effective! Pseudo-class names
+                        are not case-sensitive.
+                    </p>
+                </section>
+            </section>
+
+            <!--!   Attribute & Ending Value Selector  -->
+            <section id="endingValue" class="card_Cont">
+                <h2>Attribute & Ending Value Selector</h2>
+                <pre><p>
+        [class$="test"]  {
+            background-color: aquamarine;
+        }
+
+                </p></pre>
+                <section class="visual_Cont">
+                    <h3>.item-1</h3>
+                    <div id="active">[class="first_test"]</div>
+                    <div id="active">[class="test"]</div>
+                    <ul>
+                        UL
+                        <li class="li">List Item [class="second"]</li>
+                    </ul>
+                    <p>
+                        The <b>[attribute$="value"] </b> selector is used to
+                        select elements whose attribute value ends with a
+                        specified value. The following example selects all
+                        elements with a class attribute with a value of
+                        <b>"test"</b> or ends with <b>"test"</b>.
+                    </p>
+                </section>
+            </section>
+
+            <!--!  Disabled Input Element(s)  -->
+            <section id="disabled" class="card_Cont">
+                <h2>Disabled Input Element(s)</h2>
+                <pre><p>
+        input[type="text"] {
+            background-color: aquamarine;
+        }
+
+        input[type="text"]:disabled {
+            background-color: lightBlue;
+        }
+                </p></pre>
+                <section class="visual_Cont">
+                    <h3>H3</h3>
+                    <input
+                        class="class"
+                        placeholder="input box Active Click To See!"
+                    />
+                    <input
+                        class="lightBlue"
+                        placeholder="input box Try It Disabled!"
+                        disabled
+                    />
+                    <div>Div</div>
+                    <div>Div</div>
+                    <ul>
+                        UL
+                        <li class="li">List Item</li>
+                    </ul>
+                    <p>
+                        The <b>:disabled</b> selector matches every disabled
+                        element (mostly used on form elements).
+                    </p>
+                </section>
+            </section>
+
+            <!--!  First-Child Selector  -->
+            <section id="firstChild" class="card_Cont">
+                <h2>First-Child Selector</h2>
+                <pre><p>
+        div:first-child {
+            background-color: aquamarine;
+        }
+                </p></pre>
+                <section class="visual_Cont">
+                    <h3 id="active">First-child</h3>
+                    <div>Second-child</div>
+                    <div>Third-child</div>
+                    <div>Fourth-child</div>
+                    <ul>
+                        (UL) Fifth-child
+                        <li class="li">(List Item) Grand-Child</li>
+                    </ul>
+                    <p>
+                        The first-child selector selects the first child of it's
+                        parent. Select and style every element that is the first
+                        child of its parent:
+                    </p>
+                </section>
+            </section>
+
+            <!--!  Last-Child Selector  -->
+            <section id="lastChild" class="card_Cont">
+                <h2>Last-Child Selector</h2>
+                <pre><p>
+        div:last-child {
+            background-color: aquamarine;
+        }
+                </p></pre>
+                <section class="visual_Cont">
+                    <div>First-child</div>
+                    <div>Second-child</div>
+                    <div>Third-child</div>
+                    <div id="active">Fourth-child</div>
+                    <p>
+                        The <b>:last-child</b> selector matches every element
+                        that is the last child of its parent.
+                    </p>
+                </section>
+            </section>
+
+            <!--!  Nth-Child Selector  -->
+            <section id="nthChild" class="card_Cont">
+                <h2>Nth-Child Selector</h2>
+                <pre><p>
+    (Selects every odd-numbered child)
+   :nth-child(odd)  OR :nth-child(2n+1)
+
+   (Selects every even-numbered child)
+   :nth-child(even)  OR :nth-child(2n)
+
+
+    div:nth-child(Even) {
+        background-color: aquamarine;
+    }
+                </p></pre>
+                <section class="visual_Cont">
+                    <div>1 ODD</div>
+                    <div id="active">2 EVEN</div>
+                    <div>3 ODD</div>
+                    <div id="active">4 EVEN</div>
+                    <div>5 ODD</div>
+                    <p>
+                        The <b>:nth-child</b> pseudo-class targets elements
+                        based on their position within their parent, allowing
+                        for a wide variety of selections. Nth-child also lets
+                        you select elements in patterns. The <b>'n'</b> in the
+                        formula is like a counter, letting you target elements
+                        in repeating cycles. For instance, :nth-child(3n) would
+                        target every third element.
+                    </p>
+                </section>
+            </section>
+
+            <!--!  Nth-Last-Child Selector  -->
+            <section id="nthLastChild" class="card_Cont">
+                <h2>Nth-Last-Child Selector</h2>
+                <pre><p>
+    div:nth-last-child(2) {
+        background-color: aquamarine;
+    }
+                </p></pre>
+                <section class="visual_Cont">
+                    <div>1 ODD</div>
+                    <div>2 EVEN</div>
+                    <div>3 ODD</div>
+                    <div id="active">4 EVEN</div>
+                    <div>5 ODD</div>
+                    <p>
+                        The <b>:nth-last-child</b> pseudo-class is similar to
+                        :nth-child, but it counts from the last child backwards.
+                    </p>
+                </section>
+            </section>
+
+            <!--! Only-Child Selector  -->
+            <section id="onlyChild" class="card_Cont">
+                <h2>Only-Child Selector</h2>
+                <pre><p>
+    div:only-child(2) {
+        background-color: aquamarine;
+    }
+                </p></pre>
+                <section class="visual_Cont">
+                    <div id="div1">
+                        <div>Child 1</div>
+                        <div>Child 2</div>
+                    </div>
+                    <div id="div2">
+                        <div id="active">Only Child</div>
+                    </div>
+                    <p>
+                        The <b>:only-child</b> pseudo-class targets an element
+                        if it's the only child element of its parent.
+                    </p>
+                </section>
+            </section>
+
+            <!--! First-Of-Type Selector  -->
+            <section id="firstType" class="card_Cont">
+                <h2>First-Of-Type Selector</h2>
+                <pre><p>
+    div:first-of-type {
+        background-color: aquamarine;
+    }
+                </p></pre>
+                <section class="visual_Cont">
+                    <div>H3</div>
+                    <div>P</div>
+                    <div id="active">Div 1</div>
+                    <div>Div 2</div>
+
+                    <p>
+                        The <b>:first-of-type</b> pseudo-class targets the first
+                        element of its type within its parent.
+                    </p>
+                </section>
+            </section>
+
+            <!--! Last-Of-Type Selector  -->
+            <section id="lastType" class="card_Cont">
+                <h2>Last-Of-Type Selector</h2>
+                <pre><p>
+    p:last-of-type {
+        background-color: aquamarine;
+    }
+                </p></pre>
+                <section class="visual_Cont">
+                    <div>P</div>
+                    <div id="active">P</div>
+                    <div>Div 1</div>
+                    <div>Div 2</div>
+
+                    <p>
+                        The <b>:last-of-type</b> pseudo-class targets the last
+                        element of its type within a parent.
+                    </p>
+                </section>
+            </section>
+        </main>
+    </body>
+</html>
