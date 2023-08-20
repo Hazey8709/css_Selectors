@@ -102,6 +102,20 @@
     padding: 0.3rem;
 }
 
+/*s (M)    :has()  Selector  (Has1) */
+#has1 {
+    border: 0.1rem solid #0005;
+    height: 5rem;
+    margin-bottom: 1rem;
+}
+
+#has2 {
+    border: 0.1rem solid #0005;
+    background-color: aquamarine;
+    height: 5rem;
+    margin-bottom: 1rem;
+}
+
 /** (M)    Navigation    */
 .nav_Cont {
     /* display: inline-block; */

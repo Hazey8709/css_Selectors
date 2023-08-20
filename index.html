@@ -808,7 +808,126 @@
 
                     <p>
                         The <b>:last-of-type</b> pseudo-class targets the last
-                        element of its type within a parent.
+                        element of its type within a parent. Above we select the
+                        last type of <b>P</b> element.
+                    </p>
+                </section>
+            </section>
+
+            <!--! Nth Of Type Selector  -->
+            <section id="nthType" class="card_Cont">
+                <h2>Nth-Of-Type Selector</h2>
+                <pre><p>
+    p:nth-of-type(3) {
+        background-color: aquamarine;
+    }
+                </p></pre>
+                <section class="visual_Cont">
+                    <div>P</div>
+                    <div>P</div>
+                    <div id="active">P</div>
+                    <div>Div 2</div>
+
+                    <p>
+                        The <b>:nth-of-type</b> pseudo-class matches elements
+                        based on their type and position among siblings. Above
+                        we select the 3rd <b>P</b> element.
+                    </p>
+                </section>
+            </section>
+
+            <!--! Nth Last Of Type Selector  -->
+            <section id="nthType" class="card_Cont">
+                <h2>Nth-Last-Of-Type Selector</h2>
+                <pre><p>
+    div:nth-last-of-type(3) {
+        background-color: aquamarine;
+    }
+                </p></pre>
+                <section class="visual_Cont">
+                    <div>P</div>
+                    <div id="active">div 1 (3rd from last)</div>
+                    <div>Div 2 (2nd from last)</div>
+                    <div>Div 3 (1st from last)</div>
+
+                    <p>
+                        The <b>:nth-last-of-type</b> pseudo-class matches
+                        elements based on their type and position among
+                        siblings, but counting from the end! Above we select the
+                        <b>3rd div</b> element from the last <b>div</b>.
+                    </p>
+                </section>
+            </section>
+
+            <!--! Only Of Type Selector  -->
+            <section id="onlyOfType" class="card_Cont">
+                <h2>Only-Of-Type Selector</h2>
+                <pre><p>
+    :only-of-type {
+        background-color: aquamarine;
+    }
+                </p></pre>
+                <section class="visual_Cont">
+                    <div id="active">P</div>
+                    <div>div</div>
+                    <div>Div</div>
+                    <div>Div</div>
+
+                    <p>
+                        The <b>:nth-last-of-type</b> pseudo-class targets an
+                        element that is the only element of its type among its
+                        siblings.
+                    </p>
+                </section>
+            </section>
+
+            <!--! Not() Selector  -->
+            <section id="not" class="card_Cont">
+                <h2>Not() Selector</h2>
+                <pre><p>
+    div:not() {
+        background-color: aquamarine;
+    }
+                </p></pre>
+                <section class="visual_Cont">
+                    <div id="active">Div</div>
+                    <div id="active">Div</div>
+                    <div>Div With/ .exclude</div>
+                    <div id="active">Div</div>
+
+                    <p>
+                        The <b>:not()</b> functional pseudo-class allows you to
+                        target elements that do not match a specified selector
+                        or condition. It's essentially an exclusion filter!
+                        Above we target everything except the
+                        <b>.exclude</b> class.
+                    </p>
+                </section>
+            </section>
+
+            <!--! Has() Selector  -->
+            <section id="has" class="card_Cont">
+                <h2>Has() Selector</h2>
+                <pre><p>
+    div:has(p.special) {
+        background-color: aquamarine;
+    }
+                </p></pre>
+                <section class="visual_Cont">
+                    <div id="has1">
+                        P Parent
+                        <p>Child</p>
+                    </div>
+
+                    <div id="has2">
+                        P Parent .special
+                        <p>Child</p>
+                    </div>
+
+                    <p>
+                        The <b>:has()</b> functional pseudo-class allows to
+                        style an element if it contains a certain element or
+                        another selector.
                     </p>
                 </section>
             </section>
