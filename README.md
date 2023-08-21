@@ -2,8 +2,9 @@
 
 
 Project Link: [CSS Selectors]() <br />
-Profile: [Noobie J](noobiej.tech) <br />
-Calculator Project: [Calculator](calculator.noobiej.tech)
+Profile: [Noobie J](https://noobiej.tech) <br />
+Calculator Project: [Calculator](https://calculator.noobiej.tech/) <br />
+Todo-List Project: [Todo-List](http://todo-list.noobiej.tech/) <br />
 
 ### Project Details:
 
@@ -31,5 +32,5 @@ experiences._
 
 
 ### Selectors Covered:
-_Element Sel, -Class Sel, Id Sel, Multi Sel, Comma Sel, Descendant Sel, Adjacent Sel, Child Sel, Sibling Sel, Attribute Sel, Attr = Val, Attr ~= Val, Attr \_= Val, Attr ⌃= Val, Attr $= Val, First-Child, Last-Child, Nth-Child, Nth-Last-Child, Only-Child, First-Of-Type, Last-Of-Type, Nth-Of-Type, Nth-Last-Of-Type, Only-Of-Type, Not(), Has(), First-Letter, First-Line, Placeholder, Selection, Marker,_
+_Element Sel, Class Sel, Id Sel, Multi Sel, Comma Sel, Descendant Sel, Adjacent Sel, Child Sel, Sibling Sel, Attribute Sel, Attr = Val, Attr ~= Val, Attr \_= Val, Attr ⌃= Val, Attr $= Val, First-Child, Last-Child, Nth-Child, Nth-Last-Child, Only-Child, First-Of-Type, Last-Of-Type, Nth-Of-Type, Nth-Last-Of-Type, Only-Of-Type, Not(), Has(), First-Letter, First-Line, Placeholder, Selection, Marker,_
 <hr />
