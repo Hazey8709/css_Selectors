@@ -1,5 +1,10 @@
 # CSS Selectors
 
+
+Project Link: [CSS Selectors]() <br />
+Profile: [Noobie J](noobiej.tech) <br />
+Calculator Project: [Calculator](calculator.noobiej.tech)
+
 ### Project Details:
 
 _The "CSS Selectors Visual Guide" is a user-friendly online resource designed to assist individuals, particularly newcomers to web development,
@@ -24,6 +29,7 @@ the intricacies of CSS selectors. By offering practical examples and visual demo
 web development and design, fostering a more intuitive understanding of the role selectors play in crafting engaging and aesthetically pleasing web
 experiences._
 
-### Selectors Covered:
 
-_Element Sel, Class Sel, Id Sel, Multi Sel, Comma Sel, Descendant Sel, Adjacent Sel, Child Sel, Sibling Sel, Attribute Sel, Attr = Val, Attr ~= Val, Attr \_= Val, Attr ⌃= Val, Attr $= Val, First-Child, Last-Child, Nth-Child, Nth-Last-Child, Only-Child, First-Of-Type, Last-Of-Type, Nth-Of-Type, Nth-Last-Of-Type, Only-Of-Type, Not(), Has(), First-Letter, First-Line, Placeholder, Selection, Marker,_
+### Selectors Covered:
+_Element Sel, -Class Sel, Id Sel, Multi Sel, Comma Sel, Descendant Sel, Adjacent Sel, Child Sel, Sibling Sel, Attribute Sel, Attr = Val, Attr ~= Val, Attr \_= Val, Attr ⌃= Val, Attr $= Val, First-Child, Last-Child, Nth-Child, Nth-Last-Child, Only-Child, First-Of-Type, Last-Of-Type, Nth-Of-Type, Nth-Last-Of-Type, Only-Of-Type, Not(), Has(), First-Letter, First-Line, Placeholder, Selection, Marker,_
+<hr />
