@@ -22,42 +22,42 @@
                 <li><a href="#adjacent">Adjacent Sel</a></li>
                 <li><a href="#child">Child Sel</a></li>
                 <li><a href="#sibling">Sibling Sel</a></li>
-                <li><a href="">Attribute Sel</a></li>
-                <li><a href="">Attr = Val</a></li>
-                <li><a href="">Attr ~= Val</a></li>
-                <li><a href="">Attr *= Val</a></li>
-                <li><a href="">Attr ⌃= Val</a></li>
-                <li><a href="">Attr $= Val</a></li>
-                <li><a href="">Pseudo Class</a></li>
-                <li><a href="">Focus</a></li>
-                <li><a href="">Checked</a></li>
-                <li><a href="">Disabled</a></li>
-                <li><a href="">Enabled</a></li>
-                <li><a href="">Valid</a></li>
-                <li><a href="">Invalid</a></li>
-                <li><a href="">Required</a></li>
-                <li><a href="">Optional</a></li>
-                <li><a href="">First-Child</a></li>
-                <li><a href="">Last-Child</a></li>
-                <li><a href="">Nth-Child</a></li>
-                <li><a href="">Nth-Last-Child</a></li>
-                <li><a href="">Only-Child</a></li>
-                <li><a href="">First-Of-Type</a></li>
-                <li><a href="">Last-Of-Type</a></li>
-                <li><a href="">Nth-Of-Type</a></li>
-                <li><a href="">Nth-Last-Of-Type</a></li>
-                <li><a href="">Only-Of-Type</a></li>
-                <li><a href="">Target</a></li>
-                <li><a href="">Not()</a></li>
-                <li><a href="">Has()</a></li>
-                <li><a href="">Before()</a></li>
-                <li><a href="">After()</a></li>
-                <li><a href="">First-Letter</a></li>
-                <li><a href="">First-Line</a></li>
-                <li><a href="">Placeholder</a></li>
-                <li><a href="">Selection</a></li>
-                <li><a href="">Marker</a></li>
-                <li><a href="">Bottom</a></li>
+                <li><a href="#attributeSel">Attribute Sel</a></li>
+                <li><a href="#att&att">Attr = Val</a></li>
+                <li><a href="#attributeOne">Attr ~= Val</a></li>
+                <li><a href="#partial">Attr *= Val</a></li>
+                <li><a href="#startingValue">Attr ⌃= Val</a></li>
+                <li><a href="#endingValue">Attr $= Val</a></li>
+                <!-- <li><a href="">Pseudo Class</a></li> -->
+                <!--!<li><a href="">Focus</a></li> -->
+                <!--!<li><a href="">Checked</a></li> -->
+                <li><a href="#disabled">Disabled</a></li>
+                <!--!<li><a href="">Enabled</a></li> -->
+                <!--!<li><a href="">Valid</a></li> -->
+                <!--!<li><a href="">Invalid</a></li> -->
+                <!--!<li><a href="">Required</a></li> -->
+                <!--!<li><a href="">Optional</a></li> -->
+                <li><a href="#firstChild">First-Child</a></li>
+                <li><a href="#lastChild">Last-Child</a></li>
+                <li><a href="#nthChild">Nth-Child</a></li>
+                <li><a href="#nthLastChild">Nth-Last-Child</a></li>
+                <li><a href="#onlyChild">Only-Child</a></li>
+                <li><a href="#firstType">First-Of-Type</a></li>
+                <li><a href="#lastType">Last-Of-Type</a></li>
+                <li><a href="#nthType">Nth-Of-Type</a></li>
+                <li><a href="#nthLastType">Nth-Last-Of-Type</a></li>
+                <li><a href="#onlyOfType">Only-Of-Type</a></li>
+                <!--!<li><a href="">Target</a></li> -->
+                <li><a href="#not">Not()</a></li>
+                <li><a href="#has">Has()</a></li>
+                <!--!<li><a href="">Before()</a></li> -->
+                <!--!<li><a href="">After()</a></li> -->
+                <li><a href="#firstLetter">First-Letter</a></li>
+                <li><a href="#firstLine">First-Line</a></li>
+                <li><a href="#placeHolder">Placeholder</a></li>
+                <li><a href="#selection">Selection</a></li>
+                <li><a href="#marker">Marker</a></li>
+                <li><a href="#">Bottom</a></li>
                 <!-- <li><a href="">1</a></li>
                 <li><a href="">1</a></li>
                 <li><a href="">1</a></li>
@@ -837,7 +837,7 @@
             </section>
 
             <!--! Nth Last Of Type Selector  -->
-            <section id="nthType" class="card_Cont">
+            <section id="nthLastType" class="card_Cont">
                 <h2>Nth-Last-Of-Type Selector</h2>
                 <pre><p>
     div:nth-last-of-type(3) {
@@ -927,10 +927,171 @@
                     <p>
                         The <b>:has()</b> functional pseudo-class allows to
                         style an element if it contains a certain element or
-                        another selector.
+                        another selector. Above we select and style the Parent
+                        if the child is a <b>P</b> element with a class of
+                        <b>.special</b>.
                     </p>
                 </section>
             </section>
+
+            <!--! First Letter Selector  -->
+            <section id="firstLetter" class="card_Cont">
+                <h2>First Letter Selector</h2>
+                <pre><p>
+    p::first-letter {
+        font-size: 2rem:
+    }
+                </p></pre>
+                <section class="visual_Cont">
+                    <div>Paragraph</div>
+
+                    <p>
+                        The <b>::first-letter</b> pseudo-element is used to
+                        style the first letter of a block-level element,
+                        allowing for design elements like drop caps. Above we
+                        select the first letter and add font-size: 2rem; to the
+                        first letter.
+                    </p>
+                </section>
+            </section>
+
+            <!--! First Line Selector  -->
+            <section id="firstLine" class="card_Cont">
+                <h2>First Line Selector</h2>
+                <pre><p>
+    p::first-line {
+        font-size: 1rem:
+        color: blue;
+    }
+                </p></pre>
+                <section class="visual_Cont">
+                    <div>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Officiis similique assumenda<br />
+                        <br />
+                        P -Element
+                    </div>
+
+                    <p>
+                        The <b>::first-line</b> pseudo-element is used to style
+                        the first line of a block-level element. This allows for
+                        typographic effects that can adapt dynamically based on
+                        the size of the containing element and the font size.
+                    </p>
+                </section>
+            </section>
+
+            <!--! PlaceHolder Selector  -->
+            <section id="placeHolder" class="card_Cont">
+                <h2>PlaceHolder Selector</h2>
+                <pre><p>
+    input::placeholder {
+        color: blue;
+    }
+                </p></pre>
+                <section class="visual_Cont">
+                    <div>Div</div>
+                    <input
+                        type="text"
+                        name="name"
+                        placeholder="Input: Placeholder Text"
+                    />
+
+                    <p>
+                        The <b>::placeholder</b> pseudo-element is used to style
+                        the placeholder text of form fields like
+                        <b>input</b> and
+                        <b>textArea</b>
+                    </p>
+                </section>
+            </section>
+
+            <!--! Selection Selector  -->
+            <section id="selection" class="card_Cont">
+                <h2>Selection Selector</h2>
+                <pre><p>
+        ::selection {
+            background-color: limegreen;
+        }
+                </p></pre>
+                <section class="visual_Cont">
+                    <div class="hoverMe">Div Hover Me with pointer!</div>
+                    <div>Div</div>
+                    <div>Div Hover Me See the difference!</div>
+                    <div>Div</div>
+
+                    <p>
+                        The <b>::selection</b> pseudo-element is used to style
+                        the portion of an element that has been highlighted or
+                        selected by the user. Note: when a user clicks and drags
+                        to select text, the ::selection pseudo-element can be
+                        used to modify the background color, text color, and
+                        other styles of that selection. Above the element
+                        targeted by selection will highlight lime green.
+                    </p>
+                </section>
+            </section>
+
+            <!--! Marker Selector  -->
+            <section id="marker" class="card_Cont">
+                <h2>Marker Selector</h2>
+                <pre><p>
+        li::marker {
+            color: red;
+        }
+                </p></pre>
+                <section class="visual_Cont">
+                    <div>Div</div>
+                    <div>Div</div>
+                    <ul>
+                        UL
+                        <li class="li2">Li</li>
+                    </ul>
+
+                    <p>
+                        The <b>::marker</b> pseudo-element is used to style
+                        marker boxes in list items, which typically contain
+                        bullets (for unordered lists) or numbers/letters (for
+                        ordered lists). Above notice the red dot, instead of it
+                        being black.
+                    </p>
+                </section>
+            </section>
+
+            <!--! Marker Selector  -->
+            <section id="marker" class="card_Cont">
+                <h2>Marker Selector</h2>
+                <pre><p>
+        li::marker {
+            color: red;
+        }
+                </p></pre>
+                <section class="visual_Cont">
+                    <div>Div</div>
+                    <div>Div</div>
+                    <ul>
+                        UL
+                        <li class="li2">Li</li>
+                    </ul>
+
+                    <p>
+                        The <b>::marker</b> pseudo-element is used to style
+                        marker boxes in list items, which typically contain
+                        bullets (for unordered lists) or numbers/letters (for
+                        ordered lists). Above notice the red dot, instead of it
+                        being black.
+                    </p>
+                </section>
+            </section>
+            <div class="returnToTop">
+                <p>
+                    This is the end of the visual guide, I will be adding more
+                    over time.
+                </p>
+                <br />
+                <a href="#" id="top">Top</a>
+                <a href="#bottom" id="bottom"></a>
+            </div>
         </main>
     </body>
 </html>

@@ -3,6 +3,18 @@
     padding: 0;
 }
 
+body {
+    background-image: linear-gradient(to top, black, #0005, white, white);
+
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* filter: blur(8px); */
+    /* background: scroll; */
+    /* z-index: ; */
+}
+
 /*T (M)     Active & Special Elements  (All-Cards - Reusable)  */
 /*s (M)   Special Elements     */
 #active {
@@ -61,6 +73,19 @@
     margin-left: 1.5rem;
 }
 
+/*s (M)     LI2 Element    (Marker) */
+.li2 {
+    border: 0.1rem solid rgba(0, 0, 0, 0.521);
+    border-radius: 0.3rem;
+    background-color: white;
+    width: 18rem;
+    margin-left: 1.5rem;
+}
+
+.li2::marker {
+    color: red;
+}
+
 /*s (M)    Attribute & Starting Value Selector  */
 #startingValue p {
     border: 0.1rem solid #0005;
@@ -109,11 +134,59 @@
     margin-bottom: 1rem;
 }
 
+/*s (M)    :has()  Selector  (Has2) */
 #has2 {
     border: 0.1rem solid #0005;
     background-color: aquamarine;
     height: 5rem;
     margin-bottom: 1rem;
+}
+
+/*s (M)    first-letter Selector    */
+#firstLetter div::first-letter {
+    font-size: 2rem;
+}
+
+/*s (M)    first-line Selector    */
+#firstLine div {
+    border: 0.1rem solid #0005;
+    height: 5rem;
+}
+
+#firstLine div::first-line {
+    font-size: 1rem;
+    color: blue;
+}
+
+/*s (M)  Place holder Selector */
+#placeHolder input::placeholder {
+    color: blue;
+}
+
+.hoverMe::selection {
+    background-color: greenyellow;
+}
+
+/*s (M)   Return to Top Section */
+.returnToTop {
+    border: 0.1rem solid #0005;
+    background-color: white;
+    color: black;
+    height: 5rem;
+    margin-bottom: 3rem;
+}
+
+.returnToTop a:first-of-type {
+    border: 0.1rem solid black;
+    border-radius: 0.2rem;
+    background-color: #0005;
+    color: red;
+    text-decoration: none;
+    padding: 0.2rem;
+}
+
+.returnToTop a:first-of-type:hover {
+    color: green;
 }
 
 /** (M)    Navigation    */
@@ -122,7 +195,7 @@
     /* flex-direction: row; */
     position: fixed;
     border: 0.1rem solid black;
-    background-color: rgba(0, 0, 0, 0.619);
+    background-color: rgba(0, 0, 0, 0.715);
     width: 100%;
     height: 6rem;
     z-index: 1;
@@ -130,23 +203,15 @@
 
 .nav_Cont ul {
     display: flex;
-    /* position: fixed; */
-    border: 0.1rem solid yellow;
-    /* min-width: 20rem; */
-    /* max-width: 25rem; */
+    /* border: 0.1rem solid yellow; */
     width: 21rem;
     height: 5rem;
-
     margin: 0 auto;
-    /* margin-left: .5rem; */
-    /* margin-top: 1rem; */
-    /* flex-wrap: nowrap; */
     overflow-x: auto;
 }
 
 .nav_Cont li {
     list-style-type: none;
-    /* overflow-x: scroll; */
 }
 
 .nav_Cont a {
@@ -207,6 +272,7 @@
 /* * (M)     All Cards        */
 .card_Cont {
     border: 0.1rem solid black;
+    /* border-radius: 0.3rem; */
     background-color: rgba(0, 0, 0, 0.115);
     /* width: 95%; */
     margin: 0 auto;
@@ -289,4 +355,21 @@ input {
     padding: 0.3rem;
 }
 
-/*st   Testing ONLY  */
+@media only screen and (min-width: 600px) and (max-width: 899px) {
+    .nav_Cont ul {
+        /* display: flex; */
+        /* position: fixed; */
+        /* border: 0.1rem solid green; */
+        /* min-width: 20rem; */
+        /* max-width: 25rem; */
+        width: 36rem;
+        height: 5.5rem;
+        padding-top: 0.5rem;
+
+        /* margin: 0 auto; */
+        /* margin-left: .5rem; */
+        /* margin-top: 1rem; */
+        /* flex-wrap: nowrap; */
+        /* overflow-x: auto; */
+    }
+}
