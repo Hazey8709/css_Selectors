@@ -57,7 +57,7 @@
                 <li><a href="#placeHolder">Placeholder</a></li>
                 <li><a href="#selection">Selection</a></li>
                 <li><a href="#marker">Marker</a></li>
-                <li><a href="#">Bottom</a></li>
+                <li><a href="#bottom">Bottom</a></li>
                 <!-- <li><a href="">1</a></li>
                 <li><a href="">1</a></li>
                 <li><a href="">1</a></li>
@@ -96,9 +96,27 @@
                     science of designing for the digital realm.
                 </p>
                 <p>
-                    Pseudo-Classes start with a colon character (:).
-                    Pseudo-Elements start with two colons (::).
+                    CSS selectors are used to "find" (or select) the HTML
+                    elements you want to style. We can divide CSS selectors into
+                    five categories:
                 </p>
+
+                <section id="selectorKindList">
+                    Simple selectors (select elements based on name, id, class)
+                    <br />
+                    Combinator selectors (select elements based on a specific
+                    relationship between them) <br />
+                    Pseudo-class selectors (select elements based on a certain
+                    state) <br />
+                    Pseudo-elements selectors (select and style a part of an
+                    element) <br />
+                    Attribute selectors (select elements based on an attribute
+                    or attribute value) <br />
+                    Pseudo-Classes start with a colon character (:). <br />
+                    Pseudo-Elements start with two colons (::).
+                </section>
+
+                <p></p>
             </section>
 
             <!--!  Universal Sel -->
@@ -130,13 +148,17 @@
                         <li class="with">List Item</li>
                     </ul>
                     <p>
-                        The CSS universal selector <b> *</b> matches elements of
-                        any type. The universal selector is a special type
-                        selector and can therefore be namespaced when using
-                        @namespace. This is useful when dealing with documents
-                        containing multiple namespaces such as HTML with inline
-                        SVG or MathML, or XML that mixes multiple
+                        The CSS <b>Universal</b> selector <b> *</b> matches
+                        elements of any type. The universal selector is a
+                        special type selector and can therefore be namespaced
+                        when using @namespace. This is useful when dealing with
+                        documents containing multiple namespaces such as HTML
+                        with inline SVG or MathML, or XML that mixes multiple
                         vocabularies.<br />
+                        Above you will notice how the list item acts without the
+                        universal operator <b>(*)</b> in the first box, and with
+                        it the list item is moved left to beginning of parent
+                        and does not display bullets. <br />
                         <b
                             >ns | * _ matches all elements in namespace ns,<br />
                             * | * _ matches all elements, <br />
@@ -164,9 +186,14 @@
                         <li class="li">List Item</li>
                     </ul>
                     <p>
-                        The element selector selects elements by HTML tag name.
-                        Example: body, nav, header tags, p, div, or semantics:
-                        section, aside, quote and so on.
+                        The <b>Element</b> selector selects all of the specified
+                        element by HTML tag name. Example: body, nav, header
+                        tags, p, div, or semantics: section, aside, quote and so
+                        on. Above were calling the element <b>Div</b> and
+                        changing the background color to aquamarine. You will
+                        notice both
+                        <b>Div</b>
+                        containers are filled in.
                     </p>
                 </section>
             </section>
@@ -188,9 +215,12 @@
                         <li class="li">List Item</li>
                     </ul>
                     <p>
-                        The class selector, selects elements with a specific
-                        class attribute. Select all elements with the specified
-                        class name.
+                        The <b>Class</b> selector, selects elements with a
+                        specific class attribute. Select all elements with the
+                        specified class name. Above were selecting the element
+                        with the class name <b>.class</b> and changing the
+                        background to aquamarine. You will notice the
+                        <b>.class</b> box is filled in.
                     </p>
                 </section>
             </section>
@@ -212,10 +242,17 @@
                         <li class="li">List Item</li>
                     </ul>
                     <p>
-                        The CSS ID selector matches an element based on the
+                        The <b>ID</b> selector matches an element based on the
                         value of the element's id attribute. In order for the
                         element to be selected, its id attribute must match
-                        exactly the value given in the selector.
+                        exactly the value given in the selector. The id
+                        attribute is used to point to a specific style
+                        declaration in a style sheet. It is also used by
+                        JavaScript to access and manipulate the element with the
+                        specific id. <b>Note:</b> The id name is case sensitive!
+                        The id name must contain at least one character, cannot
+                        start with a number, and must not contain white spaces
+                        (spaces, tabs, etc.).
                     </p>
                 </section>
             </section>
@@ -224,7 +261,7 @@
             <section id="multi" class="card_Cont">
                 <h2>Multiple Selectors</h2>
                 <pre><p>
-        #active .class  {
+        #active.class  {
             background-color: aquamarine;
         }
                 </p></pre>
@@ -262,7 +299,8 @@
                     <p>
                         You can write multiple selectors separated by commas, to
                         apply the same rule to multiple sets of selected
-                        elements at once.
+                        elements at once. Above we select <b>.class-1</b> &
+                        <b>.class-2</b>.
                     </p>
                 </section>
             </section>
@@ -284,13 +322,14 @@
                         <li id="active" class="li">List Item</li>
                     </ul>
                     <p>
-                        The descendant combinator — typically represented by a
-                        single space <b> (" ")</b> character — combines two
+                        The <b>Descendant</b> combinator — typically represented
+                        by a single space <b> (" ")</b> character — combines two
                         selectors such that elements matched by the second
                         selector are selected if they have an ancestor (parent,
                         parent's parent, parent's parent's parent, etc.) element
                         matching the first selector. Selectors that utilize a
                         descendant combinator are called descendant selectors.
+                        Above we select the <b>List Item</b> in UL element.
                     </p>
                 </section>
             </section>
@@ -312,10 +351,11 @@
                         <li class="li">List Item</li>
                     </ul>
                     <p>
-                        The adjacent sibling combinator <b> + </b> separates two
-                        selectors and matches the second element only if it
-                        immediately follows the first element, and both are
-                        children of the same parent element.
+                        The <b>Adjacent</b> sibling combinator
+                        <b> + </b> separates two selectors and matches the
+                        second element only if it immediately follows the first
+                        element, and both are children of the same parent
+                        element.
                     </p>
                 </section>
             </section>
@@ -338,11 +378,12 @@
                         <li id="active" class="li">List Item</li>
                     </ul>
                     <p>
-                        The child combinator uses a <b> > </b> sign to select
-                        element(s) that are direct children to the first
+                        The <b>Child</b> combinator uses a <b> > </b> sign to
+                        select element(s) that are direct children to the first
                         element. Elements matched by the second selector must be
                         the immediate children of the elements matched by the
-                        first selector.
+                        first selector. Above we select the
+                        <b>List Item</b> element in Ul.
                     </p>
                 </section>
             </section>
@@ -364,10 +405,10 @@
                         <li class="li">List Item</li>
                     </ul>
                     <p>
-                        The general sibling combinator uses the
-                        <b>tilde</b> sign to select every element that is
+                        The <b>General Sibling</b> combinator uses the
+                        <b>tilde ( ~ )</b> sign to select every element that is
                         preceded by the first element, without having to be a
-                        direct sibling to the first element
+                        direct sibling to the first element.
                     </p>
                 </section>
             </section>
@@ -391,9 +432,10 @@
                         </li>
                     </ul>
                     <p>
-                        The <b>attribute</b> selector is used to select elements
+                        The <b>Attribute</b> selector is used to select elements
                         with a specified attribute. The following example
-                        selects all LI elements with a target attribute.
+                        selects all <b>List Item</b> elements with a target
+                        attribute.
                     </p>
                 </section>
             </section>
@@ -419,7 +461,7 @@
                     <p>
                         Select element(s) that have the specified attribute and
                         attribute value. The following example selects all
-                        elements with <b> [target="_blank"]</b> a target
+                        elements with <b> [target="_blank"]</b>, a target
                         attribute & attribute value.
                     </p>
                 </section>
@@ -1058,39 +1100,22 @@
                 </section>
             </section>
 
-            <!--! Marker Selector  -->
-            <section id="marker" class="card_Cont">
-                <h2>Marker Selector</h2>
-                <pre><p>
-        li::marker {
-            color: red;
-        }
-                </p></pre>
-                <section class="visual_Cont">
-                    <div>Div</div>
-                    <div>Div</div>
-                    <ul>
-                        UL
-                        <li class="li2">Li</li>
-                    </ul>
-
-                    <p>
-                        The <b>::marker</b> pseudo-element is used to style
-                        marker boxes in list items, which typically contain
-                        bullets (for unordered lists) or numbers/letters (for
-                        ordered lists). Above notice the red dot, instead of it
-                        being black.
-                    </p>
-                </section>
-            </section>
             <div class="returnToTop">
                 <p>
                     This is the end of the visual guide, I will be adding more
                     over time.
                 </p>
                 <br />
-                <a href="#" id="top">Top</a>
-                <a href="#bottom" id="bottom"></a>
+                <p>
+                    Contact/Questions:
+                    <a href="mailto:questions@noobiej.tech"
+                        >questions@noobiej.tech</a
+                    >
+                </p>
+                <div>
+                    <a href="#" id="top">Top</a>
+                    <a href="#bottom" id="bottom"></a>
+                </div>
             </div>
         </main>
     </body>

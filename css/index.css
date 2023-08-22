@@ -1,3 +1,4 @@
+/*!  (NOTE)  Responsive Min  Width:360 px    */
 * {
     margin: 0;
     padding: 0;
@@ -17,6 +18,14 @@ body {
 
 /*T (M)     Active & Special Elements  (All-Cards - Reusable)  */
 /*s (M)   Special Elements     */
+#selectorKindList {
+    /* border: 0.1rem solid red; */
+    border-radius: 0.5rem;
+    width: 80%;
+    margin: 0 auto;
+    padding: 0.5rem;
+}
+
 #active {
     border: 0.1rem solid black;
     background-color: aquamarine;
@@ -163,6 +172,7 @@ body {
     color: blue;
 }
 
+/*s (M)  Selection Selector   */
 .hoverMe::selection {
     background-color: greenyellow;
 }
@@ -172,11 +182,14 @@ body {
     border: 0.1rem solid #0005;
     background-color: white;
     color: black;
-    height: 5rem;
+    height: 8rem;
+    margin: 0 auto;
+    margin-top: 3rem;
     margin-bottom: 3rem;
 }
 
-.returnToTop a:first-of-type {
+.returnToTop p > a,
+a:not(:last-of-type) {
     border: 0.1rem solid black;
     border-radius: 0.2rem;
     background-color: #0005;
@@ -185,11 +198,15 @@ body {
     padding: 0.2rem;
 }
 
-.returnToTop a:first-of-type:hover {
+.returnToTop div {
+    border: none;
+}
+
+.returnToTop a:hover {
     color: green;
 }
 
-/** (M)    Navigation    */
+/** (M)          Navigation            */
 .nav_Cont {
     /* display: inline-block; */
     /* flex-direction: row; */
@@ -204,10 +221,13 @@ body {
 .nav_Cont ul {
     display: flex;
     /* border: 0.1rem solid yellow; */
-    width: 21rem;
+    border-radius: 0.2rem;
+    width: 90%;
     height: 5rem;
     margin: 0 auto;
+    margin-top: 0.4rem;
     overflow-x: auto;
+    box-shadow: 1px 1px 5px white;
 }
 
 .nav_Cont li {
@@ -233,7 +253,7 @@ body {
 /*t (M)       Main  Container      */
 #Main_Cont {
     position: absolute;
-    border: 0.1rem solid red;
+    /* border: 0.1rem solid red; */
     margin-top: 6rem;
     /* z-index: 2; */
 }
@@ -355,6 +375,7 @@ input {
     padding: 0.3rem;
 }
 
+/*T (T)                    Tablet                       */
 @media only screen and (min-width: 600px) and (max-width: 899px) {
     .nav_Cont ul {
         /* display: flex; */
@@ -371,5 +392,33 @@ input {
         /* margin-top: 1rem; */
         /* flex-wrap: nowrap; */
         /* overflow-x: auto; */
+    }
+
+    .nav_Cont ul {
+        /* display: flex; */
+        /* border: 0.1rem solid yellow; */
+        /* border-radius: 0.2rem; */
+        width: 90%;
+        height: 4.5rem;
+        /* margin: 0 auto; */
+        margin-top: 0.4rem;
+        /* overflow-x: auto; */
+        /* box-shadow: 1px 1px 5px white; */
+    }
+
+    .nav_Cont a {
+        /* display: block; */
+        /* border: 0.1rem solid white; */
+        /* border-radius: 0.3rem; */
+        /* background-color: black; */
+        /* color: white; */
+        /* width: 5.5rem; */
+        /* word-wrap: normal; */
+        margin-top: .5rem;
+        margin-right: 1rem;
+        /* text-align: center; */
+        /* text-decoration: none; */
+        padding: 0.1rem;
+        /* font-size: 18px; */
     }
 }
