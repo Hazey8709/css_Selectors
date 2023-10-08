@@ -3,14 +3,15 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
+        <script src="https://www.w3schools.com/lib/w3.js"></script>
+        <!--! W3 Schools Lib -->
         <link rel="stylesheet" type="text/css" href="./css/index.css" />
 
         <title>CSS Selectors</title>
     </head>
     <body>
         <nav class="nav_Cont">
-            <ul>
+            <ul id="searchList">
                 <li><a href="#top">Top</a></li>
                 <li><a href="#all">*</a></li>
                 <li><a href="#element">Element Sel</a></li>
@@ -63,6 +64,10 @@
                 <li><a href="">1</a></li>
                 <li><a href="">1</a></li> -->
             </ul>
+            <input id="searchInput"
+                oninput="w3.filterHTML('#searchList', 'li', this.value)"
+                placeholder="Search for Selector.."
+            />
         </nav>
 
         <main id="Main_Cont">

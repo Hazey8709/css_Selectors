@@ -18,6 +18,12 @@ body {
 
 /*T (M)     Active & Special Elements  (All-Cards - Reusable)  */
 /** (M)       Special Elements     */
+#searchInput {
+    display: block;
+    margin: 0 auto;
+    margin-top: 1rem;
+}
+
 #selectorKindQuest {
     text-align: none;
 }
@@ -279,6 +285,7 @@ a:not(:last-of-type) {
     text-align: center;
     font-family: cursive;
     font-size: 36px;
+    margin-top: 3rem;
 }
 
 /*s (M)  Sub Title  */
